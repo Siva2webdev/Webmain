@@ -11,12 +11,12 @@ import Live from "./components/Live/Live.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='' element={<Layout />} errorElement={<Error />}>
-      <Route path='/' element={<Home />} />
-      <Route path='catchup/:id/:date/' element={<Epg />} />
-      <Route path='catchup/:id/' element={<Epg />} />
-      <Route path='watch/:id/:showid' element={<Watch />} />
-      <Route path='watch/:id/live' element={<Live />} />
+    <Route path='https://kasu-live.vercel.app/' element={<Layout />} errorElement={<Error />}>
+      <Route path='https://kasu-live.vercel.app/' element={<Home />} />
+      <Route path='https://kasu-live.vercel.app/catchup/:id/:date/' element={<Epg />} />
+      <Route path='https://kasu-live.vercel.app/catchup/:id/' element={<Epg />} />
+      <Route path='https://kasu-live.vercel.app/watch/:id/:showid' element={<Watch />} />
+      <Route path='https://kasu-live.vercel.app/watch/:id/live' element={<Live />} />
     </Route>
   )
 );
